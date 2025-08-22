@@ -1,3 +1,10 @@
+#Script to take a list of Postman collection API JSON and join its necessary env variables from another JSON file.
+#The final script will generate a markdown output of the list, in-order for this work, the env variables must be unique in the list and not repeated.
+
+#############
+#By DeezSec##
+#############
+
 import json
 import re
 
@@ -113,4 +120,5 @@ def main():
         print(f"\nAn unexpected error occurred: {e}")
 
 if __name__ == "__main__":
+
     main()
